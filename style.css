@@ -3,8 +3,6 @@ body{
     font-family: Roboto, serif;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
 }
 
 .hero-section{
@@ -17,9 +15,6 @@ body{
     display: flex;
     justify-content: space-around;
     height: 72px;
-    /* width: 100vw; */
-    margin: 0;
-    padding: 0;
     align-items: center;
     font-size: 24px;
     color: #F9FAF8;
@@ -33,8 +28,6 @@ ul{
     display: inherit;
     list-style-type: none;
     gap: 32px;
-    padding: 0;
-    margin: 0;
 }
 
 a{
@@ -45,9 +38,6 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    /* width: 100vw; */
     height: 400px;
     gap: 180px;
 }
@@ -103,7 +93,7 @@ button:hover{
 
 .image-holder::after {
   content: "Website Preview";
-  position: absolute;
+  position: sticky;
   bottom: 10px;
   left: 10px;
   color: #ffffff;
@@ -132,31 +122,97 @@ h2{
     text-align: center;
     font-size: 36px;
     font-weight: 900;
-    margin: 0;
-    padding: 0;
 }
 
 .subtext-content{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 1%;
 }
 
 .info-box{
     display: inherit;
     width: 200px;
-    height: auto;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     gap: 15px;
-    margin: 0;
-    padding: 0;
+}
+
+.text{
+    font-size: large;
+    color: rgb(90, 90, 90);
 }
 
 .info-box img{
     width: 150px;
     height: 150px;
     border-radius: 12px;
-    border: 2px solid #3882F6;
+    border: 3px solid #3882F6;
+}
+
+.quote-section{
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: center;
+    height: 350px;
+    background-color: #E5E7EB;
+    overflow: hidden;
+}
+
+blockquote{
+    display: flex;
+    justify-content: center;
+}
+blockquote > p {
+    width: 50%;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: 300;
+}
+figcaption{
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: right;
+    padding-right: 28%;
+
+}
+.call-to-action-section{
+    display: inherit;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.call-to-action-content{
+    display: inherit;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-color: #3882F6;
+    border-radius: 10px;
+}
+
+h3{
+    font-size: 1.5em;
+    color: #F9FAF8;
+}
+
+.call-to-action-content button{
+    border: 2px solid #E5E7EB;
+}
+
+footer{
+    display: inherit;
+    height: 50px;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+}
+
+body, .main, ul, .secondary, h2, .info-box, blockquote > p, h3, .call-to-action-content p{
+    margin: 0;
+    padding: 0;
 }
